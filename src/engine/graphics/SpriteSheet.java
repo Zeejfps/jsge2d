@@ -26,6 +26,18 @@ public class SpriteSheet {
 		return result;
 	} 
 	
+	public Sprite getSprite(int xPos, int yPos) {
+		return getSprite(xPos, yPos, gridWidth, gridHeight);
+	}
+	
+	public int getGridWidth() {
+		return gridWidth;
+	}
+	
+	public int getGridHeight() {
+		return gridHeight;
+	}
+	
 	public static SpriteSheet create(URL spriteSheetUrl, int gridWidth, int gridHeight) {
 		
 		try {
